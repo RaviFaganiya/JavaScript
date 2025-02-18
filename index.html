@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        async function fetchdata() {
+        try{
+            const response = await axios.get("https://vfolo.com/websy/API/fetch_course_data.php");
+            console.log(response?.data?.data);
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
+
+    fetchdata();
+    </script>
+</body>
+</html>
