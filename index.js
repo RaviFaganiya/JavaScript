@@ -1,4 +1,4 @@
-
+console.log("Function in JavaScript");
 
     async function fetchdata() {
         try{
